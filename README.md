@@ -9,24 +9,25 @@ LLM 기반 데이터 처리 및 RAG 서비스 구축 경험을 보유한 AI 엔�
 
 # 🛠 Skills
 
-## Data Engineering
-- Python (Pandas, NumPy)
-- SQL (PostgreSQL)
-- ETL 자동화, 데이터 정합성 검증 로직 설계
-- 데이터 모델링 및 표준화
-- FastAPI 기반 내부 API 구축
-- 스케줄링 및 운영 자동화
 
-## AI Engineering
-- LLM Prompt Engineering
-- 비정형 텍스트 정형화 파이프라인 구축
-- RAG 기반 개인화 구조 설계
-- NLP 전처리, 멀티모달 텍스트 변환
 
-## Dev / Infra
-- Git 협업
-- Docker (기초 활용)
-- GCP 기반 실험 환경 사용
+**Data Engineering**
+- Python (Pandas, NumPy)        ██████████░░  (80%)
+- SQL (PostgreSQL)              ████████░░░░  (70%)
+- ETL / 파이프라인 자동화       ████████░░░░  (70%)
+- 데이터 모델링 · 표준화         ███████░░░░░  (60%)
+- FastAPI 기반 API 구축         ███████░░░░░  (60%)
+
+**AI / LLM**
+- LLM Prompt Engineering        █████████░░░  (75%)
+- 비정형 텍스트 정형화 파이프라인 ████████░░░░ (70%)
+- RAG 구조 설계                 ███████░░░░░  (60%)
+- NLP 전처리                    ████████░░░░  (70%)
+
+**Infra / 협업**
+- Git                          ████████░░░░  (70%)
+- Docker                       ██████░░░░░░  (50%)
+- GCP 실험 환경 사용           ██████░░░░░░  (50%)
 
 ---
 
@@ -138,5 +139,4 @@ Data Source → ETL (수집·정제·표준화) → LLM 정형화 → PostgreSQL
 ---
 
 # 📬 Contact
-Email: your-email@example.com  
-GitHub: github.com/your-id  
+Email: pdchf110872@gmail.com
