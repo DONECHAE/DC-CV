@@ -182,7 +182,7 @@ flowchart LR
 
     E1 --> E2 --> F1 --> F2
 ```
-# 소비점수 기반 저축 게임화 플랫폼 데이터 아키텍처
+### 3. 소비점수 기반 저축 게임화 플랫폼 데이터 아키텍처
 ```mermaid
 flowchart LR
 
@@ -218,7 +218,7 @@ flowchart LR
     D2 --> F1
     E5 --> F1 --> F2
 ```
-# 굿페런츠 AI 도우미 아키텍처
+### 4. 굿페런츠 AI 도우미 아키텍처
 ```mermaid
 flowchart LR
 
