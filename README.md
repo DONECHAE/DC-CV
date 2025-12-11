@@ -156,8 +156,10 @@ flowchart LR
     E2 --> B1
     E2 --> C1
     E3 --> D1
-``` 
+```
 
+### 2. 캡션/호감도 기반 텍스트 딥페이크 탐지 파이프라인
+```mermaid
 flowchart LR
 
     %% 데이터 소스
@@ -191,7 +193,9 @@ flowchart LR
     C2 --> D2 --> E1
 
     E1 --> E2 --> F1 --> F2
-
+```
+# 소비점수 기반 저축 게임화 플랫폼 데이터 아키텍처
+```mermaid
 flowchart LR
 
     %% 데이터 소스
@@ -231,7 +235,9 @@ flowchart LR
     D1 --> F1
     D2 --> F1
     E5 --> F1 --> F2
-
+```
+# 굿페런츠 AI 도우미 아키텍처
+```mermaid
 flowchart LR
 
     %% 도메인 지식
