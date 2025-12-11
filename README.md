@@ -113,10 +113,47 @@ LLM 기반 데이터 처리 및 RAG 서비스 구축 경험을 보유한 AI 엔�
 
 아래는 대표 프로젝트(경제기사 파이프라인)의 데이터 아키텍처 예시입니다.
 
-Data Source → ETL (수집·정제·표준화) → LLM 정형화 → PostgreSQL 적재  
-→ FastAPI 내부 API → 스케줄러 → 품질 검증 및 로그 모니터링
+flowchart LR
 
-(도식 파일은 별도 첨부 가능)
+    %% 데이터 소스
+    A1[재무 데이터 API] 
+    A2[거시지표 API] 
+    A3[공시 API] 
+    A4[주석 텍스트]
+
+    %% ETL 단계
+    B1[수집 모듈<br>(Python Requests)]
+    B2[정제 모듈<br>(Pandas · Regex)]
+    B3[표준화 모듈<br>(스키마 매핑)]
+    B4[품질 검증<br>누락·중복 체크]
+
+    %% LLM 정형화
+    C1[LLM 기반 주석 분석]
+    C2[프롬프트 최적화<br>케이스 스터디]
+    C3[정형 재무 계정 출력]
+
+    %% DB
+    D1[(PostgreSQL)]
+    D2[스키마: 재무 · 거시 · 공시 · 주석 정형화]
+
+    %% API 및 운영
+    E1[FastAPI 내부 API]
+    E2[스케줄러<br>(Cron/APScheduler)]
+    E3[운영 로그 및 모니터링]
+
+    %% Flow
+    A1 --> B1
+    A2 --> B1
+    A3 --> B1
+    A4 --> C1
+
+    B1 --> B2 --> B3 --> B4 --> D1
+    C1 --> C2 --> C3 --> D1
+
+    D1 --> E1
+    E2 --> B1
+    E2 --> C1
+    E3 --> D1
 
 ---
 
